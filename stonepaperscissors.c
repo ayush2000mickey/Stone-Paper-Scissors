@@ -9,7 +9,9 @@ int randomnum()
 
 int main()
 {
-    int ch, user = 0, comp = 0;
+    int ch, tell;
+    start:
+    user=0,comp=0;
     char name[50];
     printf("\n******************WELCOME TO******************\n");
     printf("***********STONE PAPER SCISSORS GAME***********\n");
@@ -65,6 +67,9 @@ int main()
         printf("\n***************\n");
         printf("\n......Match is drawn......\n\n");
     }
-
+    printf("If you want to play again press 1 or press any key to ecit: ");
+    scanf("%d",&tell);
+    if(tell == 1)
+    goto start;
     return 0;
 }
