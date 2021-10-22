@@ -9,7 +9,7 @@ int randomnum()
 
 int main()
 {
-    int ch, tell;
+    int ch, tell,user,comp;
     start:
     user=0,comp=0;
     char name[50];
@@ -17,7 +17,6 @@ int main()
     printf("***********STONE PAPER SCISSORS GAME***********\n");
     printf("Enter your name: ");
     gets(name);
-    system("cls");
     printf("\nWelcome ");
     puts(name);
     for (int i = 1; i <= 3; i++)
